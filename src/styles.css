@@ -793,14 +793,17 @@ body {
   margin-top: 60px;
   display: flex;
   gap: 40px;
+   
 }
 
 .contact-social a {
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 800;
   text-decoration: none;
   color: #555;
   letter-spacing: 1px;
   transition: 0.3s;
+   
 }
 
 .contact-social a:hover {
@@ -952,120 +955,318 @@ body {
 }
 
 /* =========================
-   ABOUT IMPACT
+   ABOUT SECTION PRO
 ========================= */
 
 .about {
-  padding: 140px 80px;
-  background: #fff;
+  position: relative;
+  padding: 160px 60px;
+  background: #0a0a0a;
+  color: white;
+  overflow: hidden;
+}
+
+/* 🔥 TEXTO GIGANTE DE FONDO */
+.about-bg-text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 220px;
+  font-weight: 800;
+  letter-spacing: 20px;
+
+  color: rgba(255, 255, 255, 0.03);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* HERO */
+.about-hero {
+  margin-bottom: 140px;
+  position: relative;
+  z-index: 2;
 }
 
 /* LISTA */
 .about-list {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 180px;
+  position: relative;
+  z-index: 2;
 }
 
-/* ROW */
+/* FILA */
 .about-row {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 100px;
 }
 
-/* alternancia */
+/* ALTERNANCIA */
 .about-row.right {
   flex-direction: row-reverse;
 }
 
-/* IMAGE */
+/* IMAGEN */
 .about-image {
-  flex: 1;
+  width: 320px;
+  height: 420px;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .about-image img {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
+
   filter: grayscale(100%);
   transition: 0.6s ease;
 }
 
 .about-row:hover img {
   filter: grayscale(0%);
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 /* INFO */
 .about-info {
-  flex: 1;
-  position: relative;
+  max-width: 500px;
 }
 
-/* NUMERO GIGANTE */
+/* NUMERO */
 .about-index {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  font-size: 120px;
-  font-weight: 700;
-  opacity: 0.05;
+  font-size: 48px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 2px;
 }
 
-/* TEXTO */
+/* NOMBRE (🔥 GRANDE) */
 .about-info h3 {
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 10px 0;
 }
 
+/* ROL */
 .about-info h4 {
   font-size: 16px;
-  color: #b71c1c;
+  color: #888;
   margin-bottom: 20px;
-  letter-spacing: 1px;
 }
 
+/* DESC */
 .about-info p {
-  font-size: 18px;
-  color: #555;
-  max-width: 500px;
+  font-size: 16px;
   line-height: 1.6;
+  color: #bbb;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
+
   .about {
-    padding: 100px 20px;
+    padding: 120px 25px;
+  }
+
+  .about-bg-text {
+    font-size: 120px;
+    top: 60px;
   }
 
   .about-row {
     flex-direction: column !important;
-    gap: 30px;
+    gap: 40px;
   }
 
-  .about-image img {
-    height: 300px;
-  }
-
-  .about-index {
-    font-size: 80px;
-    top: -20px;
+  .about-image {
+    width: 100%;
+    height: 320px;
   }
 
   .about-info h3 {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
-.footer-credit {
-  color: rgba(255, 255, 255, 0.5);
+
+
+
+
+/* HERO SOBRE FONDO OSCURO */
+.about-hero h2 {
+  color: rgba(255, 255, 255, 0.9); /* 🔥 más presencia */
 }
 
-.footer-credit span {
+/* TEXTO SECUNDARIO */
+.about-hero .secondary {
+  color: rgba(255, 255, 255, 0.5); /* antes estaba muy apagado */
+}
+
+/* SPAN (ARQWATT) → PROTAGONISTA */
+.about-hero span {
   color: white;
-  font-weight: 500;
-  letter-spacing: 0.3px;
+}
+
+/* OPCIONAL: leve glow sutil premium */
+.about-hero h2 {
+  text-shadow: 0 0 20px rgba(255,255,255,0.08);
+}
+
+/* =========================
+   CLIENTS SECTION
+========================= */
+.clients {
+  padding: 140px 60px;
+  background: #f7f7f7;
+  overflow: hidden;
+}
+
+/* =========================
+   HEADER IMPACTO (igual criterio VALUE)
+========================= */
+.clients-header {
+  margin-bottom: 80px;
+}
+
+.clients-header h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.clients-header span {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   MARQUEE
+========================= */
+.clients-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* fade lateral (MUY PRO) */
+.clients-marquee::before,
+.clients-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+}
+
+.clients-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #f7f7f7, transparent);
+}
+
+.clients-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #f7f7f7, transparent);
+}
+
+/* =========================
+   CLIENTS SECTION
+========================= */
+
+.clients-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 80px;
+}
+
+/* TRACK (el que se mueve) */
+.clients-track {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  width: max-content;
+
+  animation: scrollClients 30s linear infinite;
+}
+
+/* LOGOS */
+.clients-track a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.clients-track img {
+  height: 90px;
+  object-fit: contain;
+
+  opacity: 0.5;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+/* HOVER */
+.clients-track img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.08);
+}
+
+/* ANIMACIÓN INFINITA REAL */
+@keyframes scrollClients {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .clients-track {
+    gap: 60px;
+  }
+
+  .clients-track img {
+    height: 55px;
+  }
+
+  .clients-track a {
+    min-width: 120px;
+  }
+}
+/* CONTENEDOR */
+.clients-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 80px;
+
+  /* 🔥 FADE PRO EN LOS BORDES */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
