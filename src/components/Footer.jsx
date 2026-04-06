@@ -1,43 +1,65 @@
 import React from "react";
 
 export default function Footer() {
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const yOffset = -80;
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="footer">
-      <div className="footer-top">
+      {/* HERO FOOTER */}
+      <div className="footer-hero">
+        <h2>
+          Energía pensada.
+          <br />
+          <span>Arquitectura aplicada.</span>
+        </h2>
+      </div>
 
+      {/* MAIN */}
+      <div className="footer-main">
         {/* MARCA */}
         <div className="footer-brand">
-          <h2>ARQWATT</h2>
+          <h3>ARQWATT</h3>
           <p>
-            Arquitectura aplicada a la energía. <br />
-            Diseño, ingeniería y ejecución de soluciones eléctricas.
+            Diseño, ingeniería y ejecución de instalaciones eléctricas con
+            criterio de obra.
           </p>
         </div>
 
-        {/* NAVEGACIÓN */}
-        <div className="footer-links">
-          <h4>Navegación</h4>
-          <a href="#about">Nosotros</a>
-          <a href="#services">Servicios</a>
-          <a href="#process">Proceso</a>
-          <a href="#contact">Contacto</a>
+        {/* NAV */}
+        <div className="footer-nav">
+          <button onClick={() => scrollTo("about")}>Equipo</button>
+          <button onClick={() => scrollTo("services")}>Servicios</button>
+          <button onClick={() => scrollTo("process")}>Proceso</button>
+          <button onClick={() => scrollTo("contact")}>Contacto</button>
         </div>
 
         {/* CONTACTO */}
         <div className="footer-contact">
-          <h4>Contacto</h4>
-          <p>Junín, Buenos Aires</p>
-          <p>+54 236 000 0000</p>
+          <p>Junín · Buenos Aires</p>
+          <p>+54 236 4321985</p>
           <p>info@arqwatt.com</p>
         </div>
-
       </div>
 
+      {/* DIVIDER */}
       <div className="footer-divider" />
 
+      {/* BOTTOM */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} ARQWATT</p>
-        <p>Desarrollado por ARQWATT</p>
+        <p className="footer-credit">
+          Diseñado por <span>Arq. Leonardo Tallone</span>
+        </p>
       </div>
     </footer>
   );
