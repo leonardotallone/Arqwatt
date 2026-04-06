@@ -2,14 +2,14 @@ import React from "react";
 import useReveal from "../useReveal";
 
 import Leo from "../assets/portraits/Leo.jpg";
-import Pera from "../assets/portraits/Pera.png";
+import Pera from "../assets/portraits/Pera 2.jpg";
 import Fede from "../assets/portraits/Fede.png";
 
 const team = [
   {
     name: "Ezequiel Perassolo",
     role: "Arquitecto",
-    desc: "Experiencia en diseño y planificación de sistemas tecnológicos para arquitectura.",
+    desc: "Arquitecto graduado en FAU-UNLP, especializado en la integración de arquitectura e instalaciones eléctricas. Orienta su práctica a la domótica, automatización y sistemas inteligentes, desarrollando soluciones que combinan diseño, eficiencia energética y tecnología aplicada al hábitat. Actualmente miembro del CAUBA D6",
     img: Pera,
   },
   {
@@ -21,7 +21,7 @@ const team = [
   {
     name: "Federico Alzari",
     role: "Arquitecto",
-    desc: "Miembro del comité de Disciplina CAPBA. Enfoque técnico y criterio profesional, amante de Horacio Guarani.",
+    desc: "Arquitecto graduado en FAU-UNLP con perfil interdisciplinario orientado a la arquitectura sustentable y la transición energética. Compone diseño arquitectónico aplicando energías renovables, automatización y sistemas inteligentes para generar edificios eficientes, sustentables y adaptados a los desafíos energéticos contemporáneos. Actualmente miembro del Tribunal de Disciplina del CAUBA - Consejo Superior",
     img: Fede,
   },
 ];

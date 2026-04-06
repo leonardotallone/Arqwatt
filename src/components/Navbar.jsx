@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import logo from "../assets/logo/logo.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,10 +42,13 @@ export default function Navbar() {
     <>
       <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
         <div className="navbar-container">
-
           {/* LOGO */}
-          <div className="logo" onClick={() => scrollTo("hero")}>
-            ARQWATT
+          <div className="logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+            <img
+              src={logo}
+              alt="ARQWATT logo"
+              className={scrolled ? "logo-img scrolled" : "logo-img"}
+            />
           </div>
 
           {/* DESKTOP */}
@@ -63,7 +67,6 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       <div className={`mobile-menu ${open ? "open" : ""}`}>
-
         {/* ❌ BOTON CERRAR (AHORA SÍ VISIBLE) */}
         <div className="mobile-close" onClick={() => setOpen(false)}>
           ✕

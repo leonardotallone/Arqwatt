@@ -119,14 +119,14 @@ export default function Services() {
     <section className="services" id="services">
 
       {/* HERO */}
-      <div className="services-hero reveal">
+      {/* <div className="services-hero reveal">
         <h2>
           Servicios
         </h2>
         <p>
           Diseño, planificación y ejecución técnica con criterio de obra.
         </p>
-      </div>
+      </div> */}
       <div className="services-hero value-left reveal">
   <h2>
     Servicios
