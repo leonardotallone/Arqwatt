@@ -117,7 +117,6 @@ export default function Services() {
 
   return (
     <section className="services" id="services">
-
       {/* HERO */}
       {/* <div className="services-hero reveal">
         <h2>
@@ -128,20 +127,17 @@ export default function Services() {
         </p>
       </div> */}
       <div className="services-hero value-left reveal">
-  <h2>
-    Servicios
-    <br />
-    <span>ARQWATT</span>
-  </h2>
+        <h2>
+          Servicios
+          <br />
+          <span>ARQWATT</span>
+        </h2>
 
-  <h2 className="secondary">
-    Diseño técnico aplicado a obra
-  </h2>
-</div>
+        <h2 className="secondary">Diseño técnico aplicado a obra</h2>
+      </div>
 
       {/* BLOQUES PRINCIPALES */}
       <div className="services-main">
-
         {/* ELECTRICO */}
         <div className="service-big reveal-left">
           <div className="service-big-header">
@@ -151,11 +147,15 @@ export default function Services() {
 
           <div className="service-big-grid">
             {electric.map((item, i) => (
-              <div key={i} className="service-chip">
-                {item}
-              </div>
+               <div key={i} className="service-chip light">
+  <span className="chip-index">
+    {String(i + 1).padStart(2, "0")}
+  </span>
+  <span className="chip-text">{item}</span>
+</div>
             ))}
           </div>
+         
         </div>
 
         {/* TECNOLOGIA */}
@@ -167,13 +167,15 @@ export default function Services() {
 
           <div className="service-big-grid">
             {tech.map((item, i) => (
-              <div key={i} className="service-chip light">
-                {item}
-              </div>
+             <div key={i} className="service-chip">
+  <span className="chip-index">
+    {String(i + 1).padStart(2, "0")}
+  </span>
+  <span className="chip-text">{item}</span>
+</div>
             ))}
           </div>
         </div>
-
       </div>
 
       {/* MODALIDAD */}
@@ -197,7 +199,6 @@ export default function Services() {
           manteniendo control técnico en todo el proceso.
         </p>
       </div>
-
     </section>
   );
 }

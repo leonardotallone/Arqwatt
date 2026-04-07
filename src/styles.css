@@ -458,7 +458,96 @@ body {
   background: white;
   border: 1px solid #eee;
   font-size: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
 }
+/* 🔥 CHIP BASE */
+.service-chip {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+
+  padding: 14px 16px;
+  border: 1px solid rgba(255,255,255,0.1);
+  
+
+  font-size: 0.8rem;
+  font-weight: 600;
+   background: white;
+  border: 1px solid #eee;
+
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+
+
+
+
+.chip-index {
+  font-size: 0.7rem;
+  color: #666;
+  min-width: 20px;
+}
+/* 🔢 NUMERO */
+.chip-index {
+  font-size: 0.7rem;
+  color: #666;
+  min-width: 22px;
+  letter-spacing: 2px;
+}
+
+/* 📝 TEXTO */
+.chip-text {
+  flex: 1;
+}
+
+/* 🔥 LINEA ANIMADA */
+.service-chip::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 0%;
+  height: 2px;
+
+  background: #fff;
+
+  transition: width 0.35s ease;
+}
+
+/* ✨ HOVER */
+.service-chip:hover {
+  color: black#fff;
+  border-color: rgba(255,255,255,0.3);
+  transform: translateY(-3px);
+}
+
+/* 🔥 ANIMACION LINEA */
+.service-chip:hover::after {
+  width: 100%;
+}
+/* 🔥 CHIP CLARO */
+.service-chip.light {
+  color: #333;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.service-chip.light .chip-index {
+  color: #999;
+}
+
+/* 👇 LA CLAVE */
+.service-chip.light::after {
+  background: #000;
+}
+
+
+
+ 
 
 .service-big.dark .service-chip {
   background: #1c1c1c;
@@ -1106,7 +1195,7 @@ body {
     flex-direction: column !important;
     gap: 40px;
   }
-
+–
   .about-image {
     width: 100%;
     height: 480px;
