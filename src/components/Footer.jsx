@@ -58,7 +58,7 @@ export default function Footer() {
       {/* BOTTOM */}
       <div className="footer-bottom">
         <p className="footer-credit">
-          Diseñado por <span>Arq. Leonardo Tallone</span>
+          Diseño & desarrollo - <span>Arq. Leonardo Tallone</span>
         </p>
       </div>
     </footer>
