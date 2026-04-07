@@ -113,36 +113,19 @@ export default function Services() {
             ))}
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
 
       {/* MODALIDAD */}
-      <div className="services-mode reveal">
+      <div className="services-mode ">
         <h3>Modalidad de contratación</h3>
 
         <div className="mode-cards">
-          <div className="mode-card">
+          <div className="mode-card reveal-right">
             <h4>Mano de obra</h4>
             <p>Ejecución técnica especializada sobre proyecto existente.</p>
           </div>
 
-          <div className="mode-card highlight">
+          <div className="mode-card highlight reveal-left">
             <h4>Servicio integral</h4>
             <p>Proyecto + materiales + ejecución completa.</p>
           </div>
