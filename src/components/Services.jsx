@@ -21,6 +21,16 @@ const tech = [
   "Preinstalaciones para domótica",
   "Control de accesos",
 ];
+const documentación = [
+  "Documentación de proyecto eléctrico conforme a normativa",
+  "Planos eléctricos (plantas, unifilares y detalles)",
+  "Memorias técnicas y descriptivas",
+  "Cálculo de cargas y balance de circuitos",
+  "Especificaciones técnicas de materiales",
+  "Legajos para presentación municipal o técnica",
+  "Entrega de documentación digital y física",
+  "Actualización de planos conforme a obra (as-built)",
+];
 
 export default function Services() {
   useReveal();
@@ -57,15 +67,14 @@ export default function Services() {
 
           <div className="service-big-grid">
             {electric.map((item, i) => (
-               <div key={i} className="service-chip light">
-  <span className="chip-index">
-    {String(i + 1).padStart(2, "0")}
-  </span>
-  <span className="chip-text">{item}</span>
-</div>
+              <div key={i} className="service-chip light">
+                <span className="chip-index">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="chip-text">{item}</span>
+              </div>
             ))}
           </div>
-         
         </div>
 
         {/* TECNOLOGIA */}
@@ -77,15 +86,50 @@ export default function Services() {
 
           <div className="service-big-grid">
             {tech.map((item, i) => (
-             <div key={i} className="service-chip">
-  <span className="chip-index">
-    {String(i + 1).padStart(2, "0")}
-  </span>
-  <span className="chip-text">{item}</span>
-</div>
+              <div key={i} className="service-chip">
+                <span className="chip-index">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="chip-text">{item}</span>
+              </div>
             ))}
           </div>
         </div>
+
+            <div className="service-big reveal-left">
+          <div className="service-big-header">
+            <span>03</span>
+            <h3>Documetación</h3>
+          </div>
+
+          <div className="service-big-grid">
+            {documentación.map((item, i) => (
+              <div key={i} className="service-chip light">
+                <span className="chip-index">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="chip-text">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
 
       {/* MODALIDAD */}
