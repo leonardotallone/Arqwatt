@@ -1,94 +1,3 @@
-// import React from "react";
-// import useReveal from "../useReveal";
-
-// const electric = [
-//   "Proyecto eléctrico integral",
-//   "Cálculo de cargas y dimensionamiento",
-//   "Diseño de tableros sectorizados",
-//   "Instalaciones en viviendas y edificios",
-//   "Reformas y adecuaciones",
-//   "Armado y montaje de tableros",
-//   "Sistemas de puesta a tierra",
-//   "Canalizaciones embutidas y exteriores",
-//   "Preparación para crecimiento futuro y energías renovables",
-// ];
-
-// const tech = [
-//   "Instalación de sistemas de cámaras (CCTV)",
-//   "Sistemas de alarma cableados e inalámbricos",
-//   "Infraestructura de datos y redes",
-//   "Preinstalaciones para domótica",
-//   "Control de accesos",
-// ];
-
-// export default function Services() {
-//   useReveal();
-
-//   return (
-//     <section className="services" id="services">
-
-//       {/* HEADER */}
-//       <div className="services-header reveal">
-//         <h2>Servicios</h2>
-//         <p>
-//           Diseño y ejecución de instalaciones eléctricas y sistemas tecnológicos
-//           con criterio proyectual y precisión técnica.
-//         </p>
-//       </div>
-
-//       {/* BLOQUES */}
-//       <div className="services-layout">
-
-//         {/* IZQUIERDA */}
-//         <div className="service-block reveal-left">
-//           <h3>Instalaciones Eléctricas</h3>
-
-//           <div className="service-lines">
-//             {electric.map((item, i) => (
-//               <div key={i} className="service-line">
-//                 <span>{item}</span>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-
-//         {/* DERECHA */}
-//         <div className="service-block reveal-right">
-//           <h3>Sistemas Tecnológicos</h3>
-
-//           <div className="service-lines">
-//             {tech.map((item, i) => (
-//               <div key={i} className="service-line">
-//                 <span>{item}</span>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* FOOTER */}
-//       <div className="services-footer reveal">
-//         <h3>Modalidad</h3>
-
-//         <div className="service-lines compact">
-//           <div className="service-line">
-//             <span>Mano de obra especializada</span>
-//           </div>
-//           <div className="service-line">
-//             <span>Servicio integral con provisión de materiales</span>
-//           </div>
-//         </div>
-
-//         <p>
-//           Adaptamos cada proyecto a la lógica de obra y presupuesto,
-//           garantizando ejecución profesional y control técnico.
-//         </p>
-//       </div>
-
-//     </section>
-//   );
-// }
-
 import React from "react";
 import useReveal from "../useReveal";
 
@@ -108,6 +17,7 @@ const tech = [
   "Instalación de sistemas de cámaras (CCTV)",
   "Sistemas de alarma cableados e inalámbricos",
   "Infraestructura de datos y redes",
+  "Sistemas de sonido",
   "Preinstalaciones para domótica",
   "Control de accesos",
 ];
