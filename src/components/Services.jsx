@@ -99,7 +99,7 @@ export default function Services() {
             <div className="service-big reveal-left">
           <div className="service-big-header">
             <span>03</span>
-            <h3>Documetación</h3>
+            <h3>Documentación</h3>
           </div>
 
           <div className="service-big-grid">
