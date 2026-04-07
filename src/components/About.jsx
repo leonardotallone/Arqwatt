@@ -2,7 +2,7 @@ import React from "react";
 import useReveal from "../useReveal";
 
 import Leo from "../assets/portraits/Leo.jpg";
-import Pera from "../assets/portraits/Pera 2.jpg";
+import Pera from "../assets/portraits/Pera.png";
 import Fede from "../assets/portraits/Fede.png";
 
 const team = [
